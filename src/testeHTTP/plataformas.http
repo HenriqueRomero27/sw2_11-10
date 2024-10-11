@@ -1,0 +1,8 @@
+@url = https://8080-henriqueromero2-sw21110-5uotqh7361h.ws-us116.gitpod.io
+
+POST {{url}}/plataformas
+Content-Type: application/json
+
+{
+    "nome": "mobiule"
+}
