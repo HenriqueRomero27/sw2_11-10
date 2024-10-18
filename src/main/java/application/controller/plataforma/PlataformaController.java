@@ -10,12 +10,14 @@ import org.springframework.web.bind.annotation.RestController;
 import application.model.Plataforma;
 import application.record.Plataforma.PlataformaDTO;
 import application.repository.PlataformaRepository;
+import application.services.Plataformas.PlataformaService;
 
 @RestController
 @RequestMapping("/plataformas")
 public class PlataformaController {
     @Autowired
     private PlataformaRepository plataformaRepo;
+    private PlataformaService plataformaService;
 
     @PostMapping    
     public PlataformaDTO insert(@RequestBody PlataformaDTO plataforma) {
